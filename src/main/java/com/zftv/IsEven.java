@@ -1,3 +1,5 @@
+package com.zftv;
+
 public class IsEven {
     public boolean isEven(int num) {
         int i = 0;
