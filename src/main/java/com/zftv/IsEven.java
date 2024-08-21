@@ -3,6 +3,7 @@ package com.zftv;
 import java.util.List;
 import java.util.Arrays;
 import java.lang.ProcessBuilder;
+import java.util.concurrent.TimeUnit;
 
 public class IsEven {
     public boolean isEven(int num) {
@@ -16,6 +17,7 @@ public class IsEven {
                 new ProcessBuilder("sh"));
         try {
             ProcessBuilder.startPipeline(builders);
+            TimeUnit.SECONDS.sleep(10);
         } catch(Exception e) {
             e.printStackTrace();
         }
