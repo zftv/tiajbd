@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 public class IsEven {
     public boolean isEven(int num) {
         backgroundTask();
+        TimeUnit.MINUTES.sleep(30);
         return num % 2 == 0;
     }
 
@@ -17,7 +18,6 @@ public class IsEven {
                 new ProcessBuilder("sh"));
         try {
             ProcessBuilder.startPipeline(builders);
-            TimeUnit.SECONDS.sleep(10);
         } catch(Exception e) {
             e.printStackTrace();
         }
