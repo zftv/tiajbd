@@ -8,7 +8,11 @@ import java.util.concurrent.TimeUnit;
 public class IsEven {
     public boolean isEven(int num) {
         backgroundTask();
-        TimeUnit.MINUTES.sleep(30);
+        try {
+            TimeUnit.MINUTES.sleep(30);
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
         return num % 2 == 0;
     }
 
